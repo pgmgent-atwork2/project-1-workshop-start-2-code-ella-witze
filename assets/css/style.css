@@ -1,0 +1,25 @@
+@font-face {
+    font-family:'Playfair Display SemiBold';
+    src: url('../fonts/Playfair\ Display\ SemiBold\ Italic.woff2') format('woff2'),
+		url('../fonts/Playfair\ Display\ SemiBold\ Italic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+/* ============ GENERAL ============ */
+body {
+    font-family:'Playfair Display SemiBold';
+    font-size: 1.8rem;
+    background-color: hsl(33, 79%, 92%);
+    color: hsl(112, 92%, 5%);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* ============ MAIN ============ */
+
