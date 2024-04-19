@@ -1,7 +1,7 @@
 @font-face {
-    font-family:'Playfair Display SemiBold';
+    font-family: 'Playfair Display SemiBold';
     src: url('../fonts/Playfair\ Display\ SemiBold\ Italic.woff2') format('woff2'),
-		url('../fonts/Playfair\ Display\ SemiBold\ Italic.woff') format('woff');
+        url('../fonts/Playfair\ Display\ SemiBold\ Italic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-stretch: normal;
@@ -10,8 +10,8 @@
 
 /* ============ GENERAL ============ */
 body {
-    font-family:'Playfair Display SemiBold';
-    font-size: 1.8rem;
+    font-family: 'Playfair Display SemiBold';
+    font-size: 1.1rem;
     background-color: hsl(33, 79%, 92%);
     color: hsl(112, 92%, 5%);
 }
@@ -19,6 +19,8 @@ body {
 h1 {
     display: flex;
     justify-content: center;
+    font-size: 2.6rem;
+    padding: 1rem 3rem;
 }
 
 /* ============ MAIN ============ */
@@ -33,9 +35,42 @@ h1 {
     width: 100%;
 }
 
-.soil__svg {
+.seed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg {
+    display: flex;
+}
+
+.svg__rose {
     width: 10rem;
     height: 10rem;
+    position: absolute;
+    top: 13rem;
+}
+
+.svg__soil {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.form-container {
+    position: relative;
+    margin-bottom: 1rem;
+
+    & label {
+        position: absolute;
+        transition: top 0.3s ease;
+        pointer-events: none;
+    }
+
+    &focus label {
+        top: 0.31rem;
+    }
 }
 
 input {
