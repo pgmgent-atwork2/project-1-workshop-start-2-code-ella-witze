@@ -59,13 +59,13 @@ h1 {
 }
 
 .form {
-    border-radius: 0.25rem;
     width: 15rem;
   
     & .form__group {
       position: relative;
       display: flex;
       flex-direction: column;
+      margin-bottom: 2.3rem;
   
       &:is(:has(.form__input:focus), :has(.form__input:not(:placeholder-shown)))
         .form__label {
@@ -83,6 +83,7 @@ h1 {
         border: 1px solid hsl(0, 0%, 0%);;
         transition: border-color 0.25s linear;
         padding: 1rem;
+        border-radius: 8px;
       }
     }
   }
