@@ -23,3 +23,7 @@ h1 {
 
 /* ============ MAIN ============ */
 
+.grid-container {
+    display: flex;
+}
+
