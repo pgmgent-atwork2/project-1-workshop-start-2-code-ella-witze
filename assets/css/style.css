@@ -58,24 +58,48 @@ h1 {
     height: 10rem;
 }
 
-.form-container {
-    position: relative;
-    margin-bottom: 1rem;
-
-    & label {
+.form {
+    border-radius: 0.25rem;
+    padding: 1rem;
+  
+    & .form__group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+  
+      &:is(:has(.form__input:focus), :has(.form__input:not(:placeholder-shown)))
+        .form__label {
+        transform: scale(0.8) translateY(-1rem);
+      }
+  
+      & .form__label {
         position: absolute;
-        transition: top 0.3s ease;
-        pointer-events: none;
+        transform-origin: left top;
+        transition: all 0.2s ease;
+      }
+  
+      & .form__input {
+        border: none;
+        padding: 0.5rem 0;
+        border-bottom: 2px solid var(--dark);
+        transition: border-color 0.25s linear;
+  
+        &:focus {
+          outline: none;
+          border-color: var(--brand);
+        }
+      }
     }
-
-    &focus label {
-        top: 0.31rem;
+  
+    & .form__error {
+      display: none;
     }
-}
-
-input {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    width: 14rem;
-    padding: 1.3rem;
-}
+  }
+  
+  .form:has(.form__input--error) {
+    border: 1px solid var(--danger);
+  }
+  
+  .form:has(.form__input--error) .form__error {
+    display: block;
+  }
