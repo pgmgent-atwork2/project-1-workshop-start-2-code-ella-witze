@@ -25,5 +25,22 @@ h1 {
 
 .grid-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15rem 0;
+    gap: 3rem;
+    width: 100%;
 }
 
+.soil__svg {
+    width: 10rem;
+    height: 10rem;
+}
+
+input {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 14rem;
+    padding: 1.3rem;
+}
