@@ -64,6 +64,8 @@ header p {
 
 .svg {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .svg__rose {
@@ -83,9 +85,16 @@ header p {
 
 .form-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
+.flowers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
 .form {
   width: 15rem;
   & .form__group {
@@ -115,7 +124,19 @@ header p {
     }
   }
 }
-/*INPUT CODE*/
+/*INPUT*/
+
+.flower-wrap,
+.pot-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.input-wrap {
+  display: flex;
+  gap: 1rem;
+}
 #editor,
 pre {
   font-family: "Playfair Display SemiBold";
@@ -157,11 +178,13 @@ user agent stylesheet div {
 #editor,
 pre {
   font-family: "Playfair Display SemiBold";
+
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1;
   color: rgb(255, 255, 255);
 }
 .line-numbers {
+  margin-top: 1rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -169,7 +192,7 @@ pre {
   padding: 10px 6px;
   text-align: right;
   background-color: rgb(255, 132, 0);
-  color: #d5d5d5;
+  color: #ffffff;
 }
 
 #code {
@@ -204,4 +227,19 @@ button {
   line-height: 24px;
   color: #fff;
   cursor: pointer;
+}
+.green {
+  filter: hue-rotate(120deg);
+}
+.blue {
+  filter: hue-rotate(240deg);
+}
+.red {
+  filter: hue-rotate(0deg);
+}
+.yellow {
+  filter: hue-rotate(60deg);
+}
+.purple {
+  filter: hue-rotate(300deg);
 }
