@@ -12,6 +12,8 @@ let $potatoes = document.getElementById("potatoes");
 let $flowers = document.getElementById("flowers");
 let $coins = document.getElementById("coins");
 let $diamonds = document.getElementById("diamonds");
+let $shopCoins = document.getElementById("shop-coins");
+let $shopDiamonds = document.getElementById("shop-diamonds");
 //AMOUNTS
 
 //SELL BUTTONS
@@ -23,10 +25,12 @@ let $sellButtonGrains = document.getElementById("sell-button-grains");
 
 function updateCoinCount() {
   $coins.textContent = coins.toString();
+  $shopCoins.textContent = coins.toString();
 }
 
 function updateDiamondCount() {
   $diamonds.textContent = diamonds.toString();
+  $shopDiamonds.textContent = diamonds.toString();
 }
 
 function updateGrainCount() {
