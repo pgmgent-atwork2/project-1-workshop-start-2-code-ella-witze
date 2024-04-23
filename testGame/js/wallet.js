@@ -82,27 +82,27 @@ function increaseFlowers() {
 }
 $sellButtonCarrots.addEventListener("click", function () {
   if (carrots > 0) {
-    increaseCoins(carrots); // Verhoog de munten met het aantal verkochte wortels
-    carrots = 0; // Stel het aantal wortels in op 0 nadat ze zijn verkocht
-    updateCarrotCount(); // Werk de weergave van het aantal wortels bij in de HTML
+    increaseCoins(carrots);
+    carrots = 0;
+    updateCarrotCount();
   } else {
     console.log("not enough carrots");
   }
 });
 $sellButtonFlowers.addEventListener("click", function () {
   if (flowers > 0) {
-    increaseCoins(flowers); // Verhoog de munten met het aantal verkochte bloemen
-    flowers = 0; // Stel het aantal bloemen in op 0 nad
-    updateFlowerCount(); // Werk de weergave van het aantal bloemen bij in de HTML
+    increaseCoins(flowers);
+    flowers = 0;
+    updateFlowerCount();
   } else {
     console.log("not enough flowers");
   }
 });
 $sellButtonGrains.addEventListener("click", function () {
   if (grains > 0) {
-    increaseCoins(grains); // Verhoog de munten met het aantal verkochte granen
-    grains = 0; // Stel het aantal granen in op 0 nadat ze zijn verkocht
-    updateGrainCount(); // Werk de weergave van het aantal granen bij in de HTML
+    increaseCoins(grains);
+    grains = 0;
+    updateGrainCount();
   } else {
     console.log("not enough grains");
   }
@@ -110,9 +110,9 @@ $sellButtonGrains.addEventListener("click", function () {
 
 $sellButtonPotatoes.addEventListener("click", function () {
   if (potatoes > 0) {
-    increaseCoins(potatoes); // Verhoog de munten met het aantal verkochte aardappelen
-    potatoes = 0; // Stel het aantal aardappelen in op 0 nadat ze zijn verkocht
-    updatePotatoCount(); // Werk de weergave van het aantal aardappelen bij in de HTML
+    increaseCoins(potatoes);
+    potatoes = 0;
+    updatePotatoCount();
   } else {
     console.log("not enough potatoes");
   }
