@@ -1,0 +1,60 @@
+.header-wrap {
+  display: flex;
+  background-color: grey;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  width: 100vw;
+}
+
+.grid-wrap {
+  margin-top: 5rem;
+  width: 100vw;
+  height: 100lvh;
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shop {
+  width: 20%;
+  height: 30%;
+  background-color: white;
+  border: 1px solid black;
+
+  position: absolute;
+  margin-top: 26rem;
+}
+
+.grid {
+  width: 30%;
+  height: 40%;
+  background-color: rgb(108, 56, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.aker {
+  border: black 1px solid;
+}
+
+.overlay-wallet {
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+.overlay-wallet--active {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 100);
+  z-index: 100;
+}
+
+.inventory-box {
+  max-width: 5rem;
+}

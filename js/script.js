@@ -16,11 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const $exampleRoseSVG = document.getElementsByClassName("rose-svg")[0];
+const $exampleRoseSVGs = document.querySelectorAll(".rose-svg");
+
 let randomFlower = function () {
   let flowers = ["blue", "green", "purple", "red", "yellow"];
-  randomIndex = Math.floor(Math.random() * flowers.length);
-  $exampleRoseSVG.classList.remove("blue", "green", "purple", "red", "yellow");
-  $exampleRoseSVG.classList.toggle(flowers[randomIndex]);
-  return flowers[randomIndex];
+  $exampleRoseSVGs.forEach(function ($exampleRoseSVG) {
+    randomIndex = Math.floor(Math.random() * flowers.length);
+    $exampleRoseSVG.classList.remove(
+      "blue",
+      "green",
+      "purple",
+      "red",
+      "yellow"
+    );
+    $exampleRoseSVG.classList.toggle(flowers[randomIndex]);
+  });
 };

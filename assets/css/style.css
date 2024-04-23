@@ -178,9 +178,7 @@ user agent stylesheet div {
 #editor,
 pre {
   font-family: "Playfair Display SemiBold";
-
   font-size: 16px;
-  line-height: 1;
   color: rgb(255, 255, 255);
 }
 .line-numbers {
@@ -216,15 +214,20 @@ pre {
   bottom: 1em;
   padding-top: 0.3em;
 }
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 button {
   display: inline-block;
-  padding: 0.4em 0.8em;
+  padding: 0.3rem 1rem;
   background-color: #d11606;
   border: none;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+
   color: #fff;
   cursor: pointer;
 }
