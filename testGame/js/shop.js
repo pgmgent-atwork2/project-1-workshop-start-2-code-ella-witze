@@ -1,7 +1,7 @@
-let carrotFertilizer = 0;
-let potatoFertilizer = 0;
-let flowerFertilizer = 10;
-let grainFertilizer = 0;
+let carrotFertilizer = { price: 10, level: 100 };
+let potatoFertilizer = { price: 20, level: 0 };
+let flowerFertilizer = { price: 30, level: 0 };
+let grainFertilizer = { price: 40, level: 0 };
 
 //AMOUNTS
 
@@ -12,27 +12,27 @@ let $grainFertilizerLvl = document.getElementById("grain-fertilizer-lvl");
 //AMOUNTS
 
 //BUTTONS
-let $buyCarrotFertilizer = document.getElementById("buy-carrots-button");
-let $buyPotatoFertilizer = document.getElementById("buy-potatoes-button");
-let $buyFlowerFertilizer = document.getElementById("buy-flowers-button");
-let $buyGrainFertilizer = document.getElementById("buy-grains-button");
+let $buyCarrotFertilizer = document.getElementById("buy-carrot-button");
+let $buyPotatoFertilizer = document.getElementById("buy-potato-button");
+let $buyFlowerFertilizer = document.getElementById("buy-flower-button");
+let $buyGrainFertilizer = document.getElementById("buy-grain-button");
 
 //BUTTONS
 
 function updateCarrotFertilizerCount() {
-  $carrotFertilizerLvl.textContent = carrotFertilizer.toString();
+  $carrotFertilizerLvl.textContent = carrotFertilizer.level;
 }
 
 function updatePotatoFertilizerCount() {
-  $potatoFertilizerLvl.textContent = potatoFertilizer.toString();
+  $potatoFertilizerLvl.textContent = potatoFertilizer.level;
 }
 
 function updateFlowerFertilizerCount() {
-  $flowerFertilizerLvl.textContent = flowerFertilizer.toString();
+  $flowerFertilizerLvl.textContent = flowerFertilizer.level;
 }
 
 function updateGrainFertilizerCount() {
-  $grainFertilizerLvl.textContent = grainFertilizer.toString();
+  $grainFertilizerLvl.textContent = grainFertilizer.level;
 }
 updateCarrotFertilizerCount();
 updatePotatoFertilizerCount();
@@ -45,37 +45,53 @@ $buyFlowerFertilizer.addEventListener("click", buyFlowerFertilizer);
 $buyGrainFertilizer.addEventListener("click", buyGrainFertilizer);
 
 function buyCarrotFertilizer() {
-  if (coins >= 10) {
-    coins -= 10;
-    carrotFertilizer += 1;
+  let $buyCarrotButton = document.getElementById("buy-carrot-button");
+  if (coins.value >= 10) {
+    coins.value -= carrotFertilizer.price;
+    carrotFertilizer.level += 1;
     updateCoinCount();
     updateCarrotFertilizerCount();
+    $buyCarrotButton.classList.remove("no-money");
+  } else {
+    $buyCarrotButton.classList.add("no-money");
   }
 }
 
 function buyPotatoFertilizer() {
-  if (coins >= 10) {
-    coins -= 10;
-    potatoFertilizer += 1;
+  let $buyPotatoButton = document.getElementById("buy-potato-button");
+  if (coins.value >= 20) {
+    coins.value -= potatoFertilizer.price;
+    potatoFertilizer.level += 1;
     updateCoinCount();
     updatePotatoFertilizerCount();
+    $buyPotatoButton.classList.remove("no-money");
+  } else {
+    $buyPotatoButton.classList.add("no-money");
   }
 }
 
 function buyFlowerFertilizer() {
-  if (coins >= 10) {
-    coins -= 10;
-    flowerFertilizer += 1;
+  let $buyFlowerButton = document.getElementById("buy-flower-button");
+  if (coins.value >= 30) {
+    coins.value -= flowerFertilizer.price;
+    flowerFertilizer.level += 1;
     updateCoinCount();
     updateFlowerFertilizerCount();
+    $buyFlowerButton.classList.remove("no-money");
+  } else {
+    $buyFlowerButton.classList.add("no-money");
   }
 }
 
 function buyGrainFertilizer() {
-  if (coins >= 10) {
-    coins -= 10;
-    grainFertilizer += 1;
+  let $buyGrainButton = document.getElementById("buy-grain-button");
+  if (coins.value >= 40) {
+    coins.value -= grainFertilizer.price;
+    grainFertilizer.level += 1;
     updateCoinCount();
     updateGrainFertilizerCount();
+    $buyGrainButton.classList.remove("no-money");
+  } else {
+    $buyGrainButton.classList.add("no-money");
   }
 }

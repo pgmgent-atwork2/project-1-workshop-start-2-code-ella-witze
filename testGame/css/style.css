@@ -14,15 +14,14 @@
   gap: 20rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 /*Overlay  shop*/
 .shop {
-  width: 20%;
-  height: 30%;
+  width: 10rem;
   background-color: white;
   position: absolute;
-  margin-top: 26rem;
 }
 
 .overlay-shop {
@@ -47,7 +46,6 @@
 
 .grid {
   width: 30%;
-  height: 40%;
   background-color: rgb(108, 56, 0);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -97,4 +95,8 @@
 
 .aker--correct {
   animation: fadeOutColor 10s ease forwards;
+}
+
+.no-money {
+  background-color: red;
 }

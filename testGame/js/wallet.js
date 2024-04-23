@@ -1,9 +1,9 @@
-let coins = 10;
-let diamonds = 10;
-let grains = 100;
-let carrots = 2000;
-let potatoes = 100;
-let flowers = 100;
+let coins = { value: 1000 };
+let diamonds = { value: 10 };
+let grains = { value: 0, price: 10 };
+let carrots = { value: 0, price: 1 };
+let potatoes = { value: 0, price: 20 };
+let flowers = { value: 0, price: 4 };
 
 //AMOUNTS
 let $grains = document.getElementById("grains");
@@ -24,29 +24,29 @@ let $sellButtonGrains = document.getElementById("sell-button-grains");
 //SELL BUTTONS
 
 function updateCoinCount() {
-  $coins.textContent = coins.toString();
-  $shopCoins.textContent = coins.toString();
+  $coins.textContent = coins.value;
+  $shopCoins.textContent = coins.value;
 }
 
 function updateDiamondCount() {
-  $diamonds.textContent = diamonds.toString();
-  $shopDiamonds.textContent = diamonds.toString();
+  $diamonds.textContent = diamonds.value;
+  $shopDiamonds.textContent = diamonds.value;
 }
 
 function updateGrainCount() {
-  $grains.textContent = grains.toString();
+  $grains.textContent = grains.value;
 }
 
 function updateCarrotCount() {
-  $carrots.textContent = carrots.toString();
+  $carrots.textContent = carrots.value;
 }
 
 function updatePotatoCount() {
-  $potatoes.textContent = potatoes.toString();
+  $potatoes.textContent = potatoes.value;
 }
 
 function updateFlowerCount() {
-  $flowers.textContent = flowers.toString();
+  $flowers.textContent = flowers.value;
 }
 
 updateCoinCount();
@@ -56,68 +56,70 @@ updateCarrotCount();
 updatePotatoCount();
 updateFlowerCount();
 function increaseCoins(amount) {
-  coins += amount;
+  coins.value += amount;
   updateCoinCount();
 }
 
-function increaseDiamonds() {
-  diamonds += 10;
+function increaseDiamonds(amount) {
+  diamonds.value += amount;
   updateDiamondCount();
 }
 
-function increaseGrains() {
-  grains += 10;
+function increaseGrains(amount) {
+  grains.value += amount;
   updateGrainCount();
 }
 
-function increaseCarrots() {
-  carrots += 10;
+function increaseCarrots(amount) {
+  carrots.value += amount;
   updateCarrotCount();
 }
 
-function increasePotatoes() {
-  potatoes += 10;
+function increasePotatoes(amount) {
+  potatoes.value += amount;
   updatePotatoCount();
 }
 
-function increaseFlowers() {
-  flowers += 10;
+function increaseFlowers(amount) {
+  flowers.value += amount;
   updateFlowerCount();
 }
+
 $sellButtonCarrots.addEventListener("click", function () {
-  if (carrots > 0) {
-    increaseCoins(carrots);
-    carrots = 0;
+  if (carrots.value > 0) {
+    increaseCoins(carrots.value * carrots.price);
+    carrots.value = 0;
     updateCarrotCount();
   } else {
     console.log("not enough carrots");
   }
 });
 $sellButtonFlowers.addEventListener("click", function () {
-  if (flowers > 0) {
-    increaseCoins(flowers);
-    flowers = 0;
+  if (flowers.value > 0) {
+    increaseCoins(flowers.value * flowers.price);
+    flowers.value = 0;
     updateFlowerCount();
   } else {
     console.log("not enough flowers");
   }
 });
-$sellButtonGrains.addEventListener("click", function () {
-  if (grains > 0) {
-    increaseCoins(grains);
-    grains = 0;
-    updateGrainCount();
-  } else {
-    console.log("not enough grains");
-  }
-});
 
 $sellButtonPotatoes.addEventListener("click", function () {
-  if (potatoes > 0) {
-    increaseCoins(potatoes);
-    potatoes = 0;
+  if (potatoes.value > 0) {
+    increaseCoins(potatoes.value * potatoes.price);
+    potatoes.value = 0;
     updatePotatoCount();
   } else {
     console.log("not enough potatoes");
+  }
+});
+
+$sellButtonGrains.addEventListener("click", function () {
+  if (grains.value > 0) {
+    increaseCoins(grains.value * grains.price);
+    grains.value = 0;
+    updateGrainCount();
+  } else {
+    console.log("not enough grains");
   }
 });
