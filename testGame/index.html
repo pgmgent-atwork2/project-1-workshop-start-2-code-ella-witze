@@ -23,19 +23,44 @@
 
   </header>
   <main>
-    <div class="overlay-wallet" id="overlay-wallet">
+
+
+    <!--SHOP-->
+    <div class="overlay-shop" id="overlay-shop">
       <div class="overlay-content">
         <header class="header-wrap">
           <h2>Tutorial</h2>
           <h1>Code Gardener</h1>
           <div class="right-nav">
-            <button class="button" id="return-button">return</button>
+            <button  id="shop-return-button" >return</button>
             <p>logo
             </p>
           </div>
         </header>
-        <h2>Wallet</h2>
+        <div class="silo-wallet-wrap">
+        <div class="silo">
+          <h2>Inventory</h2>
+          <div class="inventory">
+            <div class="inventory-box">
+              <img src="/images/SVG/Carrot icon.svg" alt="carrot">
+              <p id="carrots">0</p>
+            </div>
+            <div class="inventory-box">
+              <img src="/images/SVG/Flower Garden 2 icon.svg" alt="flower">
+              <p id="flowers">0</p>
+            </div>
+            <div class="inventory-box">
+              <img src="/images/SVG/Cereal Wheat Icon.svg" alt="grain">
+              <p id="grains">0</p>
+            </div>
+            <div class="inventory-box">
+              <img src="/images/SVG/Potato icon.svg" alt="potato">
+              <p id="potatos">0</p>
+            </div>
+          </div>
+        </div>
         <div class="wallet">
+          <h2>Wallet</h2>
           <div class="wallet__item">
             <div class="wallet__item__icon">
               <div class="inventory-box">
@@ -60,9 +85,77 @@
               <p id="diamonds">0</p>
             </div>
           </div>
+          </div>
         </div>
       </div>
     </div>
+    <!--SHOP-->
+
+    <!--WALLET-->
+    <div class="overlay-wallet" id="overlay-wallet">
+      <div class="overlay-content">
+        <header class="header-wrap">
+          <h2>Tutorial</h2>
+          <h1>Code Gardener</h1>
+          <div class="right-nav">
+            <button class="return-button" id="wallet-return-button">return</button>
+            <p>logo
+            </p>
+          </div>
+        </header>
+        <div class="silo-wallet-wrap">
+        <div class="silo">
+          <h2>Inventory</h2>
+          <div class="inventory">
+            <div class="inventory-box">
+              <img src="/images/SVG/Carrot icon.svg" alt="carrot">
+              <p id="carrots">0</p>
+            </div>
+            <div class="inventory-box">
+              <img src="/images/SVG/Flower Garden 2 icon.svg" alt="flower">
+              <p id="flowers">0</p>
+            </div>
+            <div class="inventory-box">
+              <img src="/images/SVG/Cereal Wheat Icon.svg" alt="grain">
+              <p id="grains">0</p>
+            </div>
+            <div class="inventory-box">
+              <img src="/images/SVG/Potato icon.svg" alt="potato">
+              <p id="potatos">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="wallet">
+          <h2>Wallet</h2>
+          <div class="wallet__item">
+            <div class="wallet__item__icon">
+              <div class="inventory-box">
+                <img src="/images/SVG/Coin icon.svg" alt="coin">
+              </div>
+
+            </div>
+            <div class="wallet__item__text">
+              <p>Coins</p>
+              <p id="coins">0</p>
+            </div>
+          </div>
+          <div class="wallet__item">
+            <div class="wallet__item__icon">
+              <div class="inventory-box">
+                <img src="/images/SVG/Diamond icon.svg" alt="diamond">
+              </div>
+
+            </div>
+            <div class="wallet__item__text">
+              <p>Diamonds</p>
+              <p id="diamonds">0</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--WALLET-->
     <div class="grid-wrap">
       <div class="grid grid__grain">
         <div class="aker aker__grain"></div>
@@ -100,8 +193,9 @@
         <div class="aker aker__carrot"></div>
         <div class="aker aker__carrot"></div>
       </div>
-      <div class="shop">
-        <h2>shop</h2>
+      <div class="shop" id="button-shop">
+        <img class="button-shop" src="images/SVG/Market Vector.svg" alt="">
+        
 
       </div>
       <div class="grid grid__flowers">
@@ -143,7 +237,8 @@
     </div>
   </main>
 
-  <script src="./js/wallet.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/shop.js"></script>
   <header></header>
 </body>
 
