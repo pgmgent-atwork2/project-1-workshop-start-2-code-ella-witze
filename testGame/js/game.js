@@ -118,7 +118,11 @@ function handleClick() {
   const selectedAnswer = options[selectedOptionIndex - 1];
 
   if (selectedAnswer === correctAnswer) {
-    this.style.backgroundColor = "lightgreen";
+    this.classList.add("aker--correct");
+    setTimeout(function () {
+      carrots++;
+      updateCarrotCount();
+    }, 10000);
   }
 }
 

@@ -84,3 +84,16 @@
   padding: 3rem;
   border: solid white 2px;
 }
+
+@keyframes fadeOutColor {
+  0% {
+    background-color: rgba(0, 255, 0, 1);
+  }
+  100% {
+    background-color: rgba(0, 255, 0, 0);
+  }
+}
+
+.aker--correct {
+  animation: fadeOutColor 10s ease forwards;
+}
