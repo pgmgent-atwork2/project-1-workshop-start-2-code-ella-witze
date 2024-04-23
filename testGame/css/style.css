@@ -1,9 +1,31 @@
 .header-wrap {
   display: flex;
-  background-color: grey;
+  background-color: #78b831;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 3rem;
   width: 100vw;
+}
+
+.left-nav {
+  display: flex;
+  flex: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.middle-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.15rem;
 }
 
 .grid-wrap {
@@ -14,6 +36,12 @@
   gap: 20rem;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.right-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 /*Overlay  shop*/
@@ -31,6 +59,7 @@
   height: 100vh;
   overflow-y: scroll;
 }
+
 .overlay-shop--active {
   display: flex;
   position: fixed;
@@ -43,6 +72,7 @@
   background-color: rgba(0, 0, 0, 100);
   z-index: 100;
 }
+
 /*Overlay  shop*/
 
 .grid {
@@ -56,6 +86,7 @@
 
 .aker {
   border: black 1px solid;
+  padding: 1rem;
 }
 
 .overlay-wallet {
@@ -63,6 +94,7 @@
   width: 100%;
   height: 100vh;
 }
+
 .overlay-wallet--active {
   display: flex;
   position: fixed;
@@ -75,26 +107,56 @@
   background-color: rgba(0, 0, 0, 100);
   z-index: 100;
 }
+
 .silo-wallet-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .inventory-box {
+  margin-bottom: 1rem;
   max-width: 10rem;
   padding: 3rem;
   border: solid white 2px;
 }
 
-@keyframes fadeOutColor {
+@keyframes brighterBorder {
   0% {
-    background-color: rgba(0, 255, 0, 1);
+    border: 4px solid rgba(0, 255, 1);
+    /* Brighter green */
+
   }
+
   100% {
-    background-color: rgba(0, 255, 0, 0);
+    border-color: black(0, 255, 0, 0.5);
+    /* Brighter green */
   }
 }
 
 .aker--correct {
-  animation: fadeOutColor 10s ease forwards;
+  animation: brighterBorder 6s ease forwards;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.silo,
+.wallet {
+  margin-top: 2rem;
+}
+
+.inventory {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.wallet {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
