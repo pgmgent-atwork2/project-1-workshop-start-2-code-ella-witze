@@ -6,11 +6,13 @@
   --lightgreen-color: hsl(83, 72%, 70%);
   --green-color: hsl(85, 52%, 40%);
   --darkgreen-color: hsl(91, 63%, 26%);
+  --darkbrown-color: hsl(29, 62%, 21%);
+  --lightbrown-color: hsl(29, 58%, 44%);
 }
-
 body {
   font-family: "Jersey 25", sans-serif;
-  background-color: var(--yellow-color);
+  background-image: url(../images/png/grass-graphic.avif);
+  background-color: var(--green-color);
   margin: 0;
 }
 
@@ -22,7 +24,7 @@ body {
 
 .sell-btn,
 .buy-btn {
-  background-color: var(--darkgreen-color);
+  background-color: var(--darkbrown-color);
   color: hsl(0, 0%, 100%);
   border: none;
   padding: 1rem;
@@ -33,7 +35,7 @@ body {
 /* ========== HEADER ========== */
 .header-wrap {
   display: flex;
-  background-color: var(--green-color);
+  background-image: url(../images/png/wooden\ graphic.jpeg);
   justify-content: space-between;
   padding: 2rem 3rem;
   width: 100vw;
@@ -52,7 +54,9 @@ body {
   display: flex;
   gap: 2rem;
 }
-
+.header-wrap {
+  color: rgb(85, 51, 20);
+}
 .logo-wrap {
   display: flex;
   gap: 2rem;
@@ -60,16 +64,16 @@ body {
 }
 
 .right-nav button {
-  background-color: var(--green-color);
-  color: var(--darkgreen-color);
-  border: solid var(--darkgreen-color) 5px;
+  background-color: rgb(177, 110, 47);
+  color: rgb(85, 51, 20);
+  border: solid rgb(85, 51, 20) 5px;
   border-radius: 1rem;
 
   cursor: pointer;
 }
 .right-nav button:hover {
-  background-color: var(--darkgreen-color);
-  color: var(--green-color);
+  background-color: rgb(85, 51, 20);
+  color: rgb(177, 110, 47);
 }
 .wallet-return-button {
   background-color: var(red);
@@ -110,7 +114,11 @@ body {
   left: 0;
   width: 100vw;
   color: hsl(0, 0%, 0%);
-  background-color: var(--yellow-color);
+
+  background-image: url(../images/png/farm-inside.jpeg);
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Ensure image covers the entire body */
+  margin: 0;
   z-index: 100;
 }
 
@@ -149,9 +157,12 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  color: hsl(0, 0%, 0%);
-  background-color: var(--yellow-color);
+
+  background-image: url(../images/png/storage.jpg);
+  background-size: cover;
+  background-position: center;
   z-index: 100;
+  color: white;
 }
 
 .silo-wallet-wrap {
@@ -164,10 +175,11 @@ body {
 .inventory-box {
   max-width: 10rem;
   padding: 3rem;
-  border: solid var(--darkgreen-color) 2px;
+  border: solid var(--darkbrown-color) 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--lightbrown-color);
 }
 
 .inventory-box img {
@@ -257,5 +269,9 @@ body {
 .pay-to-win {
   border: none;
   background-color: aqua;
+}
+.pay-to-win a {
+  color: black;
+  text-decoration: none;
 }
 /*PAY TO WIN*/
