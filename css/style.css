@@ -139,7 +139,9 @@ body {
   padding: 3rem;
   border: solid var(--darkgreen-color) 2px;
 }
-
+.inventory-box img {
+  width: 100%;
+}
 @keyframes fadeOutColor {
   0% {
     background-color: rgba(0, 255, 0, 1);
