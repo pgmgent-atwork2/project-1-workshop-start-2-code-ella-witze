@@ -2,9 +2,16 @@ let $buttonWallet = document.getElementById("button-wallet");
 let $overlayWallet = document.getElementById("overlay-wallet");
 let $walletReturnButton = document.getElementById("wallet-return-button");
 
+//AUDIO
+let $openStoreSound = document.getElementById("open-store-sound");
+let $openInventorySound = document.getElementById("open-inventory-sound");
+let $harvestPlantSound = document.getElementById("harvest-plant-sound");
+
+//AUDIO
 $buttonWallet.addEventListener("click", function () {
   console.log("clicked");
   $overlayWallet.classList.toggle("overlay-wallet--active");
+  $openInventorySound.play();
 });
 
 $walletReturnButton.addEventListener("click", function () {
@@ -19,6 +26,7 @@ let $shopReturnButton = document.getElementById("shop-return-button");
 $buttonShop.addEventListener("click", function () {
   console.log("clicked");
   $overlayShop.classList.toggle("overlay-shop--active");
+  $openStoreSound.play();
 });
 
 $shopReturnButton.addEventListener("click", function () {
@@ -123,6 +131,7 @@ function handleClick(vegetable, time, fertilizer) {
 
     if (selectedAnswer === correctAnswer) {
       event.target.classList.toggle("aker--correct");
+      $harvestPlantSound.play();
       setTimeout(() => {
         event.target.classList.toggle("aker--correct");
         vegetable.value++; // Assuming vegetable is an object with a 'value' property
