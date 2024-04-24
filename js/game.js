@@ -134,8 +134,8 @@ function handleClick(vegetable, time, fertilizer) {
       $harvestPlantSound.play();
       setTimeout(() => {
         event.target.classList.toggle("aker--correct");
-        vegetable.value++; // Assuming vegetable is an object with a 'value' property
-        updateCarrotCount(); // Ensure this function exists and updates the UI
+        vegetable.value++;
+        updateCarrotCount();
         updateFlowerCount();
         updateGrainCount();
         updatePotatoCount();

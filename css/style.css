@@ -123,9 +123,11 @@ body {
   border: solid 1rem var(--darkgreen-color);
 }
 
+.aker img {
+  padding: 1.5rem;
+}
 .aker {
   border: hsl(0, 0%, 0%) 1px solid;
-  padding: 1rem;
 }
 
 .music-player {
@@ -152,7 +154,6 @@ body {
   z-index: 100;
 }
 
-
 .silo-wallet-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -164,6 +165,9 @@ body {
   max-width: 10rem;
   padding: 3rem;
   border: solid var(--darkgreen-color) 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inventory-box img {
@@ -175,28 +179,27 @@ body {
     background-color: hsl(120, 100%, 50%);
   }
   100% {
-    background-color: hsla(120, 100%, 50%, 0);
+    background-color: hsla(0, 0%, 100%, 0);
   }
 }
 
 .aker--correct {
-  animation: fadeOutColor 8s ease forwards;
+  animation: fadeOutColor 3s ease forwards;
 }
 
 .aker__grain {
-  background-image: url("../images/SVG/grain-ground.svg");
+  background-color: rgb(115, 44, 0);
+  position: relative;
 }
 .aker__carrot {
-  background-image: url("../images/SVG/square-svgrepo-com.svg");
+  background-color: rgb(149, 58, 2);
 }
 .aker__potato {
-  background-image: url("../images/SVG/flower-ground.svg");
+  background-color: rgb(149, 58, 2);
 }
 .aker__flower {
-  background-image: url("../images/SVG/patato-ground.svg");
+  background-color: rgb(115, 44, 0);
 }
-
-
 
 .no-money {
   background-color: hsl(0, 100%, 50%) 0000;
@@ -210,51 +213,49 @@ body {
   cursor: pointer;
   background-color: var(--green-color);
 }
-<<<<<<< HEAD
 
 .pause {
   background-color: var(--darkgreen-color);
-  width: 3.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
 }
-=======
-.pause {
-  width: 50px;
-  height: 50px;
-  background-color: var(--darkgreen-color);
-}
-.play svg {
-  width: 50px;
-  height: 50px;
-  background-color: none;
-}
-/*TUTORIAL*/
+
 .overlay-tutorial {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   z-index: 100;
 }
 .shown {
   display: flex;
   align-items: center;
+  justify-content: center;
+
   flex-wrap: wrap;
   margin-left: 1rem;
 
-  width: 22%;
-  height: 20%;
-  margin-top: 10rem;
+  width: 100%;
+  height: 100%;
 }
 .tutorial-text {
   background-color: hsl(34, 100%, 42%);
   padding: 2rem;
   border-radius: 1rem;
   width: 50%;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem hsl(0, 0%, 0%);
 }
 .main-page-information {
   width: 162.47px;
 }
-/*TUTORIAL*/
->>>>>>> 3568edb74e33e68609e4eb54c4023a26cb9556a6
+.inventory-location  {
+  width: 210px;
+}
+/*PAY TO WIN*/
+.pay-to-win {
+  border: none;
+  background-color: aqua;
+}
+/*PAY TO WIN*/
