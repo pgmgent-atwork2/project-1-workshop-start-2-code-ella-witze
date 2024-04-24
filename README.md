@@ -7,6 +7,8 @@ Tutorial:
 Op het startscherm zijn vier akkers te zien verdeeld in verschillende vierkanten.
 Door op een vierkant te klikken komt een quizvraag tevoorschijn. Na het correct beantwoorden van deze vraag zal er een visuele timer komen op het vierkantje en zal er iets groeien.  
 
-Daarna is het mogelijk de geplante bloem, aardappel, graan of wortel te oogsten. Dit zal in je winkel terechtkomen. Hier kan je naartoe via de shop knop in het midden van de homepagina. In je shop vind je al je geoogste goederen. Deze kan je verkopen door op de SELL knop te drukken en hierdoor zal er geld in je wallet komen. 
+Daarna is het mogelijk de geplante bloem, aardappel, graan of wortel te oogsten. Dit kan je zien door de groene achtergrond die verschijnt. Als deze terug vervaagt is naar de normale achtergrondkleur is het oogsten gebeurd en vind je dit terug in je winkel.
+
+Hier kan je naartoe via de shop knop in het midden van de homepagina. In je shop vind je al je geoogste goederen. Deze kan je verkopen door op de SELL knop te drukken en hierdoor zal er geld in je wallet komen. 
 
 Met dit geld kan je opnieuw graan kopen, door op de BUY knop te drukken, waardoor je nieuwe dingen zal kunnen planten op de homepagina (mits je de juiste vraag beantwoordt).

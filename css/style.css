@@ -1,3 +1,4 @@
+/* ========== GENERAL ========== */
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 
 :root {
@@ -10,7 +11,39 @@
 body {
   font-family: "Jersey 25", sans-serif;
   background-color: var(--yellow-color);
+  margin: 0;
 }
+
+.button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sell-btn,
+.buy-btn {
+  background-color: var(--darkgreen-color);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+/* ========== HEADER ========== */
+.header-wrap {
+  display: flex;
+  background-color: var(--green-color);
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  width: 100vw;
+  align-items: center;
+}
+
+.header-wrap img {
+  width: 4rem;
+}
+
 .right-nav {
   display: flex;
   gap: 2rem;
@@ -29,33 +62,18 @@ body {
 
   cursor: pointer;
 }
-.header-wrap {
-  display: flex;
-  background-color: var(--green-color);
-  justify-content: space-between;
-  padding: 2rem 3rem;
-  width: 100vw;
-  align-items: center;
-}
-.header-wrap img {
-  width: 4rem;
-}
-.button {
-  background-color: none;
-  border: none;
-  cursor: pointer;
-}
+
+/* ========== MAIN ========== */
 .grid-wrap {
   margin-top: 5rem;
   width: 100vw;
-  height: 100lvh;
   display: flex;
   gap: 20rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-/*Overlay  shop*/
+/* Overlay  shop */
 .shop {
   width: 10rem;
   position: absolute;
@@ -74,19 +92,15 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  color: black;
+  color: hsl(0, 0%, 0%);
   background-color: var(--yellow-color);
   z-index: 100;
 }
-/*Overlay  shop*/
-
-/*WALLET*/
 
 /*WALLET*/
 .grid {
   width: 30%;
-  background-color: rgb(108, 56, 0);
+  background-color: hsl(31, 100%, 21%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -94,7 +108,7 @@ body {
 }
 
 .aker {
-  border: black 1px solid;
+  border: hsl(0, 0%, 0%) 1px solid;
 }
 
 .music-player {
@@ -107,16 +121,7 @@ body {
   height: 100vh;
   overflow-y: scroll;
 }
-.sell-btn,
-.buy-btn {
-  background-color: var(--darkgreen-color);
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 1rem;
-}
+
 .overlay-wallet--active {
   display: flex;
   position: fixed;
@@ -125,29 +130,34 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  color: black;
+  color: hsl(0, 0%, 0%);
   background-color: var(--yellow-color);
   z-index: 100;
 }
+
 .silo-wallet-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 2rem;
 }
+
 .inventory-box {
   max-width: 10rem;
   padding: 3rem;
   border: solid var(--darkgreen-color) 2px;
 }
+
 .inventory-box img {
   width: 100%;
 }
+
 @keyframes fadeOutColor {
   0% {
-    background-color: rgba(0, 255, 0, 1);
+    background-color: hsl(120, 100%, 50%);
   }
   100% {
-    background-color: rgba(0, 255, 0, 0);
+    background-color: hsla(120, 100%, 50%, 0);
   }
 }
 
@@ -156,10 +166,10 @@ body {
 }
 
 .no-money {
-  background-color: red;
+  background-color: hsl(0, 100%, 50%)0000;
 }
 
-/*AUDIO*/
+/* ========== AUDIO ========== */
 .play {
   width: 50px;
   height: 50px;
@@ -173,4 +183,3 @@ body {
   height: 100%;
   background-color: none;
 }
-/*AUDIO*/
