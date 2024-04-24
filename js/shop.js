@@ -1,7 +1,7 @@
 let carrotFertilizer = { price: 10, level: 0 };
-let potatoFertilizer = { price: 20, level: 0 };
-let flowerFertilizer = { price: 30, level: 0 };
-let grainFertilizer = { price: 40, level: 0 };
+let potatoFertilizer = { price: 40, level: 0 };
+let flowerFertilizer = { price: 20, level: 0 };
+let grainFertilizer = { price: 30, level: 0 };
 
 //AMOUNTS
 
