@@ -8,16 +8,25 @@
   <title>CodeGardener</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" href="images/SVG/coding-svgrepo-com.svg" type="image/x-icon">
 </head>
 
 <body>
   <header class="header-wrap">
-    <h2>Tutorial</h2>
-    <h1>Code Gardener</h1>
+    <div class="music-player">
+      <audio id="audio" src="audio/Country Game Music 120315.mp3" loop></audio>
+      <button id="playPauseBtn" class="play"><img src="images/SVG/Sound.svg" alt=""></button>
+
+    </div>
+    </audio>
+    <div class="logo-wrap">
+      <h1>LogicFarmer</h1>
+      <img src="images/SVG/coding-svgrepo-com.svg" alt="">
+    </div>
+
     <div class="right-nav">
       <button class="button" id="button-wallet">Wallet</button>
-      <p>logo
-      </p>
+ 
     </div>
 
 
@@ -30,11 +39,14 @@
       <div class="overlay-content">
         <header class="header-wrap">
           <h2>Tutorial</h2>
-          <h1>Code Gardener</h1>
+          <div class="logo-wrap">
+            <h1>LogicFarmer</h1>
+            <img src="images/SVG/coding-svgrepo-com.svg" alt="">
+          </div>
           <div class="right-nav">
             <button  id="shop-return-button" >return</button>
-            <p>logo
-            </p>
+
+          
           </div>
         </header>
         <div class="silo-wallet-wrap">
@@ -42,37 +54,31 @@
           <h2>Fertilizer</h2>
           <div class="inventory">
             <div class="inventory-box">
-              <img src="/images/SVG/Agriculture Seed Bag.svg" alt="carrot">
+              <img src="images/SVG/Agriculture Seed Bag.svg" alt="carrot">
               <h3>Carrot</h3>
                <p> lvl <span id="carrot-fertilizer-lvl"> </span></p>
-           
-
             </div>
-            <button id="buy-carrot-button">BUY</button>
+            <button class="buy-btn" id="buy-carrot-button">BUY</button>
             <div class="inventory-box">
-              <img src="/images/SVG/Agriculture Seed Bag.svg" alt="flower">
+              <img src="images/SVG/Agriculture Seed Bag.svg" alt="flower">
               <h3>Flower</h3>
               <p> lvl <span id="flower-fertilizer-lvl"> </span></p>
-    
-  
             </div>
-            <button id="buy-flower-button">BUY</button>
+            <button class="buy-btn" id="buy-flower-button">BUY</button>
             <div class="inventory-box">
-              <img src="/images/SVG/Agriculture Seed Bag.svg" alt="grain">
+              <img src="images/SVG/Agriculture Seed Bag.svg" alt="grain">
               <h3>Grain</h3>
               <p> lvl <span id="grain-fertilizer-lvl"> </span></p>
-     
-
             </div>
-            <button id="buy-grain-button">BUY</button>
+            <button class="buy-btn" id="buy-grain-button">BUY</button>
             <div class="inventory-box">
-              <img src="/images/SVG/Agriculture Seed Bag.svg" alt="potato">
+              <img src="images/SVG/Agriculture Seed Bag.svg" alt="potato">
               <h3>Potato</h3>
               <p> lvl <span id="potato-fertilizer-lvl"> </span></p>
      
 
             </div>
-            <button id="buy-potato-button">BUY</button>
+            <button class="buy-btn" id="buy-potato-button">BUY</button>
           </div>
         </div>
         <div class="wallet">
@@ -80,7 +86,7 @@
           <div class="wallet__item">
             <div class="wallet__item__icon">
               <div class="inventory-box">
-                <img src="/images/SVG/Coin icon.svg" alt="coin">
+                <img src="images/SVG/Coin icon.svg" alt="coin">
               </div>
 
             </div>
@@ -92,7 +98,7 @@
           <div class="wallet__item">
             <div class="wallet__item__icon">
               <div class="inventory-box">
-                <img src="/images/SVG/Diamond icon.svg" alt="diamond">
+                <img src="images/SVG/Diamond icon.svg" alt="diamond">
               </div>
 
             </div>
@@ -111,12 +117,13 @@
     <div class="overlay-wallet" id="overlay-wallet">
       <div class="overlay-content">
         <header class="header-wrap">
-          <h2>Tutorial</h2>
-          <h1>Code Gardener</h1>
+          <h2>Tutorial</h2><div class="logo-wrap">
+            <h1>LogicFarmer</h1>
+            <img src="images/SVG/coding-svgrepo-com.svg" alt="">
+          </div>
           <div class="right-nav">
             <button class="return-button" id="wallet-return-button">return</button>
-            <p>logo
-            </p>
+
           </div>
         </header>
         <div class="silo-wallet-wrap">
@@ -124,27 +131,27 @@
           <h2>Inventory</h2>
           <div class="inventory">
             <div class="inventory-box">
-              <img src="/images/SVG/Carrot icon.svg" alt="carrot">
+              <img src="images/SVG/Carrot icon.svg" alt="carrot">
               <p id="carrots">0</p>
               
               
             </div>
-            <button id="sell-button-carrots">SELL</button>
+            <button class="sell-btn" id="sell-button-carrots">SELL</button>
             <div class="inventory-box">
-              <img src="/images/SVG/Flower Garden 2 icon.svg" alt="flower">
+              <img src="images/SVG/Flower Garden 2 icon.svg" alt="flower">
               <p id="flowers">0</p>
             </div>
-            <button id="sell-button-flowers">SELL</button>
+            <button class="sell-btn" id="sell-button-flowers">SELL</button>
             <div class="inventory-box">
-              <img src="/images/SVG/Cereal Wheat Icon.svg" alt="grain">
+              <img src="images/SVG/Cereal Wheat Icon.svg" alt="grain">
               <p id="grains">0</p>
             </div>
-            <button id="sell-button-grains">SELL</button>
+            <button class="sell-btn" id="sell-button-grains">SELL</button>
             <div class="inventory-box">
-              <img src="/images/SVG/Potato icon.svg" alt="potato">
+              <img src="images/SVG/Potato icon.svg" alt="potato">
               <p id="potatoes">0</p>
             </div>
-            <button id="sell-button-potatoes">SELL</button>
+            <button class="sell-btn" id="sell-button-potatoes">SELL</button>
           </div>
         </div>
         <div class="wallet">
@@ -152,7 +159,7 @@
           <div class="wallet__item">
             <div class="wallet__item__icon">
               <div class="inventory-box">
-                <img src="/images/SVG/Coin icon.svg" alt="coin">
+                <img src="images/SVG/Coin icon.svg" alt="coin">
               </div>
 
             </div>
@@ -164,7 +171,7 @@
           <div class="wallet__item">
             <div class="wallet__item__icon">
               <div class="inventory-box">
-                <img src="/images/SVG/Diamond icon.svg" alt="diamond">
+                <img src="images/SVG/Diamond icon.svg" alt="diamond">
               </div>
 
             </div>
@@ -264,6 +271,7 @@
   <script src="js/wallet.js"></script>
   <script src="js/shop.js"></script>
   <script src="js/game.js"></script>
+  <script src="js/audio.js"></script>
   <header></header>
 </body>
 

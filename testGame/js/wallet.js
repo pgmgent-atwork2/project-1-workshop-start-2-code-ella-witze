@@ -1,5 +1,5 @@
-let coins = { value: 1000 };
-let diamonds = { value: 10 };
+let coins = { value: 0 };
+let diamonds = { value: 0 };
 let grains = { value: 0, price: 10 };
 let carrots = { value: 0, price: 1 };
 let potatoes = { value: 0, price: 20 };

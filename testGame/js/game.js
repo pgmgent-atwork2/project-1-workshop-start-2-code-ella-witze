@@ -25,6 +25,9 @@ $shopReturnButton.addEventListener("click", function () {
   console.log("clicked");
   $overlayShop.classList.remove("overlay-shop--active");
   $buyCarrotFertilizer.classList.remove("no-money");
+  $buyPotatoFertilizer.classList.remove("no-money");
+  $buyFlowerFertilizer.classList.remove("no-money");
+  $buyGrainFertilizer.classList.remove("no-money");
 });
 
 function handleClick(vegetable, time, fertilizer) {
@@ -136,27 +139,27 @@ const $carrotGridItems = document.querySelectorAll(".aker__carrot");
 $carrotGridItems.forEach((item) => {
   item.addEventListener(
     "click",
-    handleClick(carrots, 1000, carrotFertilizer.level)
+    handleClick(carrots, 10000, carrotFertilizer.level)
   );
 });
 const $flowerGridItems = document.querySelectorAll(".aker__flower");
 $flowerGridItems.forEach((item) => {
   item.addEventListener(
     "click",
-    handleClick(flowers, 2000, flowerFertilizer.level)
+    handleClick(flowers, 20000, flowerFertilizer.level)
   );
 });
 const $grainGridItems = document.querySelectorAll(".aker__grain");
 $grainGridItems.forEach((item) => {
   item.addEventListener(
     "click",
-    handleClick(grains, 3000, grainFertilizer.level)
+    handleClick(grains, 30000, grainFertilizer.level)
   );
 });
 const $potatoGridItems = document.querySelectorAll(".aker__potato");
 $potatoGridItems.forEach((item) => {
   item.addEventListener(
     "click",
-    handleClick(potatoes, 4000, potatoFertilizer.level)
+    handleClick(potatoes, 40000, potatoFertilizer.level)
   );
 });
