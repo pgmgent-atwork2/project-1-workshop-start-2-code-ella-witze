@@ -275,3 +275,27 @@ body {
   text-decoration: none;
 }
 /*PAY TO WIN*/
+
+#fullscreenButton {
+  top: 10px;
+  right: 10px;
+  z-index: 101;
+}
+.left-header button {
+  background-color: var(--lightbrown-color);
+  color: var(--darkbrown-color);
+  border: solid var(--darkbrown-color) 5px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.left-header button:hover {
+  background-color: var(--darkbrown-color);
+  color: var(--lightbrown-color);
+}
+.left-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: var(--darkbrown-color);
+}

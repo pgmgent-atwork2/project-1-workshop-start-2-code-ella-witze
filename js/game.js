@@ -172,3 +172,13 @@ $potatoGridItems.forEach((item) => {
     handleClick(potatoes, 40000, potatoFertilizer.level)
   );
 });
+
+const fullscreenButton = document.getElementById("fullscreenButton");
+
+fullscreenButton.addEventListener("click", () => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  } else {
+    document.documentElement.requestFullscreen();
+  }
+});
